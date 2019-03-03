@@ -1,9 +1,9 @@
-version: '2.2'
+version: '2.0'
 services:
   rabbit:
     image: "rabbitmq"
     ports:
-     - "5680:5672"  
+     - "5672:5680"  
   producer:
     build:
       context: .
