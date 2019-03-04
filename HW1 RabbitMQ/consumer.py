@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 import pika
+import time
+
+time.sleep(45)
 
 conn_params = pika.ConnectionParameters('rabbit', 5672)
 connection = pika.BlockingConnection(conn_params)
